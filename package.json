@@ -9,7 +9,8 @@
   "scripts": {
     "build": "tsup",
     "prepare": "yarn build",
-    "lint": "tsc && eslint --fix"
+    "lint": "tsc && eslint --fix",
+    "ci": "yarn run lint && yarn run build"
   },
   "files": [
     "lib/**/*"
