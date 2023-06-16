@@ -8,9 +8,9 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "tsup",
-    "prepare": "yarn build",
     "lint": "tsc && eslint --fix",
-    "ci": "yarn run lint && yarn run build"
+    "ci": "yarn lint && yarn build",
+    "publish": "yarn lint && yarn build && changeset publish"
   },
   "files": [
     "lib/**/*"
