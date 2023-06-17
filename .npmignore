@@ -1,0 +1,6 @@
+*
+!package.json
+!lib/**/*
+!CHANGELOG.md
+!README.md
+!LICENSE

@@ -2,13 +2,17 @@
   "name": "console-wizard",
   "description": "A minimal yet colorful and customizable alternative to javascript's default logger.",
   "author": "Sushant Ray <contact@neon.is-a.dev>",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": false,
-  "main": "lib/index.js",
-  "module": "lib/index.mjs",
-  "types": "lib/index.d.ts",
+  "main": "./lib/index.js",
+  "module": "./lib/index.mjs",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    "import": "./lib/index.mjs",
+    "require": "./lib/index.js"
+  },
   "scripts": {
-    "build": "tsup",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc && eslint --fix",
     "ci": "yarn lint && yarn build",
     "publish": "yarn lint && yarn build && changeset publish"
@@ -21,13 +25,15 @@
     "typescript",
     "logger",
     "log",
-    "chroma"
+    "console",
+    "console-wizard"
   ],
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/GoodBoyNeon/chroma.js.git"
+    "url": "https://github.com/GoodBoyNeon/console-wizard.git"
   },
+  "homepage": "https://github.com/GoodBoyNeon/console-wizard#readme",
   "devDependencies": {
     "@changesets/cli": "^2.26.1",
     "@types/node": "^20.3.1",
@@ -37,6 +43,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "ts-node": "^10.9.1",
     "tsup": "^7.0.0",
     "typescript": "*"
   }

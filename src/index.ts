@@ -1,22 +1,8 @@
-const info = () => {};
-const warn = () => {};
-const error = () => {};
+import { error, info, success, warn } from './logger';
 
-const logger = {
-  info,
-  warn,
+export const logger = {
   error,
+  info,
+  success,
+  warn,
 };
-
-const chroma = {
-  logger,
-};
-
-export default chroma;
-
-export class Chroma {
-  static success(message: string) {}
-  static info(message: string) {}
-  static warn(message: string) {}
-  static error(message: string) {}
-}
