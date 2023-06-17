@@ -21,3 +21,4 @@ logger.warn('getDataById() has been depreciated! Use getData instead()');
 ```
 
 ### Output:
+![image](https://github.com/GoodBoyNeon/console-wizard/assets/93624576/fdee992a-bab8-4b97-9a4a-2d7736867237)
