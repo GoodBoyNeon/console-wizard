@@ -1,5 +1,11 @@
 # console-wizard
 
+## 1.1.0
+
+### Minor Changes
+
+- 16ae0cf: Fix lib/\*\* not being included in the package
+
 ## 1.0.0
 
 ### Major Changes
