@@ -1,22 +1,20 @@
-import { resetWrapper, styleWrapper } from '../helpers';
-import { getTimestamp } from '../helpers/getTimestamp';
+import { combineParams, getLoggingArgs, getTimestamp } from '../helpers/';
+import { ConfigType, userConfig } from '../wizardConfig';
 
 const timestamp = `[${getTimestamp()}]`;
 
-export const success = (message: string) => {
+export const success = (message: string, userConfigOverride?: ConfigType) => {
   const statusMsg = 'SUCCESS ';
 
-  return console.log(
-    `\n`,
-    styleWrapper['fgGray'],
-    timestamp,
-    resetWrapper,
-    styleWrapper['bgGreen'],
-    styleWrapper['bold'],
+  const finalConfig: ConfigType = { ...userConfig, ...userConfigOverride };
+
+  const loggingArgs = getLoggingArgs(finalConfig, {
     statusMsg,
-    resetWrapper,
-    styleWrapper['fgGreen'],
     message,
-    resetWrapper
-  );
+    timestamp,
+  });
+
+  const args = combineParams(loggingArgs.join(' '));
+
+  console.log(args);
 };

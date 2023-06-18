@@ -1,6 +1,6 @@
 export const styleWrapper = {
   reset: '\x1b[0m',
-  bold: '\x1b[1m',
+  bold: '\x1b[1m', // This lightens the color as a side-effect
   dim: '\x1b[2m',
   italic: '\x1b[3m',
   underscore: '\x1b[4m',
@@ -28,6 +28,6 @@ export const styleWrapper = {
   bgCyan: '\x1b[46m',
   bgWhite: '\x1b[47m',
   bgGray: '\x1b[100m',
-};
+} as const;
 
 export const resetWrapper = '\x1b[0m';
