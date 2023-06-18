@@ -1,5 +1,11 @@
 # console-wizard
 
+## 1.1.1
+
+### Patch Changes
+
+- 6544c2c: Patch .gitignore to not include ./lib
+
 ## 1.1.0
 
 ### Minor Changes
