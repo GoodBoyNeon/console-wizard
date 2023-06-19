@@ -1,8 +1,8 @@
 <div align="center">
 	<br />
 	<p>
-    <h1 align="center">Console Wizard</h1>
-  <h6 align="center">A minimal yet colorful and customizable alternative to javascript's default logger.</h6>
+    <h1 align="center">🌈 Console Wizard</h1>
+  <h6 align="center">🚀 A minimal yet colorful and customizable alternative to javascript's default logger.</h6>
 	</p>
 	<br />
 	<p>
@@ -14,11 +14,10 @@
 	</p>
 </div>
 
-## Contents
+#### Contents
 
 <!--toc:start-->
 
-- [Contents](#contents)
 - [Installation](#installation)
 - [Usage](#usage)
   - [Output:](#output)
