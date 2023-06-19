@@ -38,6 +38,7 @@
     "@changesets/cli": "^2.26.1",
     "@types/node": "^20.3.1",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
+    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.0.1",
     "eslint-config-standard-with-typescript": "^35.0.0",
     "eslint-plugin-import": "^2.25.2",
@@ -46,5 +47,10 @@
     "ts-node": "^10.9.1",
     "tsup": "^7.0.0",
     "typescript": "*"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
