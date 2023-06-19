@@ -1,22 +1,22 @@
 import { ConfigType } from '../wizardConfig';
 import { resetWrapper, styleWrapper } from '.';
 
-interface LoggingDataType {
+export interface LogDataType {
   timestamp: string;
   statusMsg: string;
   message: string;
 }
 
-export const getLoggingArgs = (config: ConfigType, data: LoggingDataType) => {
+export const getLoggingArgs = (config: ConfigType, logData: LogDataType) => {
   const args: string[] = [`\n`];
   const { includeTimestamp, includeStatus } = config;
 
-  if (includeTimestamp) args.push(...[styleWrapper['fgGray'], data.timestamp, resetWrapper]);
+  if (includeTimestamp) args.push(...[styleWrapper['fgGray'], logData.timestamp, resetWrapper]);
 
   if (includeStatus)
-    args.push(...[styleWrapper['bgRed'], styleWrapper['bold'], data.statusMsg, resetWrapper]);
+    args.push(...[styleWrapper['bgRed'], styleWrapper['bold'], logData.statusMsg, resetWrapper]);
 
-  args.push(...[styleWrapper['fgRed'], data.message, resetWrapper]);
+  args.push(...[styleWrapper['fgRed'], logData.message, resetWrapper]);
 
   return args;
 };

@@ -1,5 +1,34 @@
 # console-wizard
 
+## 1.2.0
+
+### Minor Changes
+
+- Add configuration methods for better customization of the logs.
+
+  Methods of configuration:
+
+  1. User's default configuration
+
+  ```js
+  import { WizardConfig } from 'console-wizard';
+
+  new WizardConfig({
+      ...,
+  });
+  ```
+
+  2. Inline configuration
+
+  ```js
+
+  logger.error('Message here', {
+      ...,
+  });
+  ```
+
+  Refer to [Configuration Guide](https://github.com/GoodBoyNeon/console-wizard/blob/main/README.md#configuration) for more information.
+
 ## 1.1.1
 
 ### Patch Changes

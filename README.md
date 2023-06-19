@@ -6,8 +6,11 @@
 	</p>
 	<br />
 	<p>
-    <a href="https://www.npmjs.com/package/console-wizard"><img src="https://img.shields.io/npm/v/console-wizard?style=flat-square&logo=appveyor" alt="NPM Version" /></a>
-		<a href="https://www.npmjs.com/package/console-wizard"><img src="https://img.shields.io/npm/dt/console-wizard" alt="NPM Download Count" /></a>
+    <a href="https://www.npmjs.com/package/console-wizard"><img src="https://img.shields.io/npm/v/console-wizard?style=flat-square&logo=npm"</a>
+		<a href="https://www.npmjs.com/package/console-wizard"><img src="https://img.shields.io/npm/dt/console-wizard?style=flat-square&logo=npm"/></a>
+    <a href="https://www.github.com/GoodBoyNeon/console-wizard"><img src="https://img.shields.io/github/issues/GoodBoyNeon/console-wizard?style=flat-square&logo=github" /></a>
+    <a href="https://www.github.com/GoodBoyNeon/console-wizard"><img src="https://img.shields.io/github/issues-pr/GoodBoyNeon/console-wizard?style=flat-square&logo=github" /></a>
+    <a href="https://www.github.com/GoodBoyNeon/console-wizard"><img src="https://img.shields.io/github/actions/workflow/status/GoodBoyNeon/console-wizard/build.yml?style=flat-square&logo=github" /></a>
 	</p>
 </div>
 
@@ -15,9 +18,10 @@
 
 <!--toc:start-->
 
+- [Contents](#contents)
 - [Installation](#installation)
 - [Usage](#usage)
-  - [Output](#output)
+  - [Output:](#output)
 - [Configuration](#configuration)
   - [Configuring each log statement](#configuring-each-log-statement)
 - [Author](#author)
@@ -51,7 +55,7 @@ logger.warn('getDataById() has been depreciated! Use getData instead()');
 
 ## Configuration
 
-You can setup the user default configuration by:
+You can set up the user default configuration by:
 
 ```js
 import { WizardConfig } from 'console-wizard';
