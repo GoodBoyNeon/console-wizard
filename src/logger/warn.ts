@@ -3,7 +3,7 @@ import { ConfigType, userConfig } from '../wizardConfig';
 
 const timestamp = `[${getTimestamp()}]`;
 
-export const warn = (message: string, userConfigOverride?: ConfigType) => {
+export const warn = (message: string, userConfigOverride?: ConfigType): string => {
   const statusMsg = 'WARN ';
 
   const finalConfig: ConfigType = { ...userConfig, ...userConfigOverride };
@@ -17,4 +17,6 @@ export const warn = (message: string, userConfigOverride?: ConfigType) => {
   const args = combineParams(loggingArgs.join(' '));
 
   console.log(args);
+
+  return message;
 };
