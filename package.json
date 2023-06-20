@@ -15,7 +15,8 @@
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc && eslint --fix",
     "ci": "yarn lint && yarn build",
-    "publish": "yarn lint && yarn build && changeset publish"
+    "publish": "yarn lint && yarn build && changeset publish",
+    "release": "yarn semantic-release"
   },
   "files": [
     "lib/**/*"
@@ -35,7 +36,8 @@
   },
   "homepage": "https://github.com/GoodBoyNeon/console-wizard#readme",
   "devDependencies": {
-    "@changesets/cli": "^2.26.1",
+    "@semantic-release/git": "^10.0.1",
+    "@semantic-release/github": "^9.0.3",
     "@types/node": "^20.3.1",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "cz-conventional-changelog": "^3.3.0",
@@ -44,6 +46,7 @@
     "eslint-plugin-import": "^2.25.2",
     "eslint-plugin-n": "^15.0.0",
     "eslint-plugin-promise": "^6.0.0",
+    "semantic-release": "^21.0.5",
     "ts-node": "^10.9.1",
     "tsup": "^7.0.0",
     "typescript": "*"
