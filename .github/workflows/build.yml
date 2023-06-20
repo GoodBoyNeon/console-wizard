@@ -1,16 +1,12 @@
-name: Release
 
+name: Build
 on:
   push:
     branches:
       - '**'
 
 jobs:
-  release:
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,7 +16,3 @@ jobs:
           cache: 'yarn'
       - run: yarn --frozen-lockfile
       - run: yarn ci
-      - run: yarn release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
