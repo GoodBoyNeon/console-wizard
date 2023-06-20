@@ -1,4 +1,35 @@
-export const styleWrapper = {
+export interface styleWrapperType {
+  reset: string;
+  bold: string;
+  dim: string;
+  italic: string;
+  underscore: string;
+  blink: string;
+  reverse: string;
+  hidden: string;
+  strike: string;
+
+  fgBlack: string;
+  fgRed: string;
+  fgGreen: string;
+  fgYellow: string;
+  fgBlue: string;
+  fgMagenta: string;
+  fgCyan: string;
+  fgWhite: string;
+  fgGray: string;
+  bgBlack: string;
+  bgRed: string;
+  bgGreen: string;
+  bgYellow: string;
+  bgBlue: string;
+  bgMagenta: string;
+  bgCyan: string;
+  bgWhite: string;
+  bgGray: string;
+}
+
+export const styleWrapper: styleWrapperType = {
   reset: '\x1b[0m',
   bold: '\x1b[1m', // This lightens the color as a side-effect
   dim: '\x1b[2m',

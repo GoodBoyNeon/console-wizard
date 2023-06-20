@@ -4,12 +4,12 @@ import { ConfigType, userConfig } from '../wizardConfig';
 const timestamp = `[${getTimestamp()}]`;
 
 export const success = (message: string, userConfigOverride?: ConfigType): string => {
-  const statusMsg = 'SUCCESS ';
+  const statusId = 'success';
 
   const finalConfig: ConfigType = { ...userConfig, ...userConfigOverride };
 
   const loggingArgs = getLoggingArgs(finalConfig, {
-    statusMsg,
+    statusId,
     message,
     timestamp,
   });
