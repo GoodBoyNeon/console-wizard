@@ -2,7 +2,7 @@
   "name": "console-wizard",
   "description": "A minimal yet colorful and customizable alternative to javascript's default logger.",
   "author": "Sushant Ray <contact@neon.is-a.dev>",
-  "version": "1.3.0",
+  "version": "0.0.0-development",
   "private": false,
   "main": "./lib/index.js",
   "module": "./lib/index.mjs",
@@ -15,8 +15,9 @@
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc && eslint --fix",
     "ci": "yarn lint && yarn build",
-    "publish": "yarn lint && yarn build && changeset publish",
-    "release": "yarn semantic-release"
+    "publish": "yarn lint && yarn build",
+    "release": "yarn semantic-release",
+    "semantic-release": "semantic-release"
   },
   "files": [
     "lib/**/*"
