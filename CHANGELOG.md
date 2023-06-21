@@ -1,5 +1,19 @@
 # console-wizard
 
+## [1.1.0](https://github.com/GoodBoyNeon/console-wizard/compare/v1.0.1...v1.1.0) (2023-06-21)
+
+
+### Features
+
+* add `setWizardConfig()` ([493a674](https://github.com/GoodBoyNeon/console-wizard/commit/493a674acec8e41074c455494a113e2f84153045))
+
+
+### Bug Fixes
+
+* fix color conflict ([49fa3f6](https://github.com/GoodBoyNeon/console-wizard/commit/49fa3f61ce4635eb8faf0213ca93fd162bd6cfb9))
+* update github workflow ([8c64b9d](https://github.com/GoodBoyNeon/console-wizard/commit/8c64b9d291bf1b521d4ecef9c6ddd7e64b5a13f6))
+* update version ([3f9e931](https://github.com/GoodBoyNeon/console-wizard/commit/3f9e931f656f32fc06b673285183000882001df8))
+
 ## 1.3.0
 
 ### Minor Changes
