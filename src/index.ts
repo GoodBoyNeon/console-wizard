@@ -7,5 +7,5 @@ export const logger = {
   warn,
 };
 
-export { WizardConfig, ConfigType } from './wizardConfig';
+export { WizardConfig, ConfigType, setWizardConfig } from './wizardConfig';
 export { LogDataType } from './helpers/getLoggingArgs';
