@@ -2,7 +2,7 @@
   "name": "console-wizard",
   "description": "A minimal yet colorful and customizable alternative to javascript's default logger.",
   "author": "Sushant Ray <contact@neon.is-a.dev>",
-  "version": "1.4.0",
+  "version": "1.1.0",
   "private": false,
   "main": "./lib/index.js",
   "module": "./lib/index.mjs",
