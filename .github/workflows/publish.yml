@@ -1,18 +1,13 @@
 name: Publish
-
 on:
   push:
     branches:
-      - main
+      - 'main'
 
 concurrency: ${{ github.workflow }}-${{ github.ref }}
 
 jobs:
-  on-success:
-    permissions:
-      contents: write
-      issues: write
-      pull-requests: write
+  publish:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
@@ -20,13 +15,13 @@ jobs:
         with:
           node-version: 18
           cache: 'yarn'
+
       - run: yarn --frozen-lockfile
-      - run: yarn ci
-      - name: Publish
+      - name: Create release pull request or publish
         id: changesets
-        uses: changesets@action@v1
+        uses: changesets/action@v1
         with:
-          publish: yarn run build
+          publish: yarn build
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
