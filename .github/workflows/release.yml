@@ -17,6 +17,5 @@ jobs:
         with:
           release-type: node
           package-name: release-please-action
-          release-as: 1.3.2
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
