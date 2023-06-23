@@ -14,7 +14,8 @@
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc && eslint --fix",
-    "ci": "yarn lint && yarn build"
+    "ci": "yarn lint && yarn build",
+    "publish": "yarn lint && npm publish"
   },
   "files": [
     "lib/**/*"
@@ -34,7 +35,6 @@
   },
   "homepage": "https://github.com/GoodBoyNeon/console-wizard#readme",
   "devDependencies": {
-    "@changesets/cli": "^2.26.1",
     "@types/node": "^20.3.1",
     "@typescript-eslint/eslint-plugin": "^5.50.0",
     "cz-conventional-changelog": "^3.3.0",
