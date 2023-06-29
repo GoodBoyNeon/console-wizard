@@ -57,9 +57,9 @@ logger.warn('getDataById() has been depreciated! Use getData instead()');
 You can set up the user default configuration by:
 
 ```js
-import { WizardConfig } from 'console-wizard';
+import { setWizardConfig } from 'console-wizard';
 
-new WizardConfig({
+setWizardConfig({
   /* Weather to include timestamp in the log */
   includeTimestamp: true,
 
