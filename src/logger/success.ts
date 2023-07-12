@@ -1,15 +1,17 @@
 import { combineParams, getLoggingArgs, getTimestamp } from '../helpers/';
-import { ConfigType, userConfig } from '../wizardConfig';
+import { getConfig } from '../helpers/getConfig';
+import { StatusType } from '../typings/LoggerTypes';
+import { ConfigType } from '../setWizardConfig';
 
 const timestamp = `[${getTimestamp()}]`;
 
 export const success = (message: string, userConfigOverride?: ConfigType): string => {
-  const statusId = 'success';
+  const statusType: StatusType = 'success';
 
-  const finalConfig: ConfigType = { ...userConfig, ...userConfigOverride };
+  const config = getConfig(userConfigOverride);
 
-  const loggingArgs = getLoggingArgs(finalConfig, {
-    statusId,
+  const loggingArgs = getLoggingArgs(config, {
+    statusType,
     message,
     timestamp,
   });

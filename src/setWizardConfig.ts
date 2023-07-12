@@ -1,11 +1,17 @@
+import { TableBorder, defaultTableBorder } from './helpers/tableCharacters';
+
 export interface ConfigType {
   includeTimestamp?: boolean;
   includeStatus?: boolean;
+  tableBorder?: TableBorder;
+  includeSN?: boolean;
 }
 
 const defaultConfig: Required<ConfigType> = {
   includeTimestamp: true,
   includeStatus: true,
+  tableBorder: defaultTableBorder,
+  includeSN: false,
 };
 
 export let userConfig: ConfigType = defaultConfig;

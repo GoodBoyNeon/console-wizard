@@ -1,38 +1,33 @@
-import { ConfigType } from '../wizardConfig';
+import { ConfigType } from '../setWizardConfig';
 import { resetWrapper, styleWrapper, styleWrapperType } from '.';
+import { ColorType, StatusType } from '../typings/LoggerTypes';
 
 export interface LogDataType {
   timestamp: string;
-  statusId: string;
+  statusType: StatusType;
   message: string;
 }
 
-interface StatusFromStatusIdType {
+interface StatusText {
   error: string;
   warn: string;
   info: string;
   success: string;
 }
 
-interface ColorType {
-  error: string;
-  warn: string;
-  info: string;
-  success: string;
-}
-
-interface ColorFromStatusIdType {
+interface StatusColors {
   fg: ColorType;
   bg: ColorType;
 }
-const statusFromStatusId: StatusFromStatusIdType = {
+
+const statusText: StatusText = {
   error: 'ERROR ',
   warn: 'WARN ',
   info: 'INFO ',
   success: 'SUCCESS ',
 } as const;
 
-const colorFromStatusId: ColorFromStatusIdType = {
+export const statusColors: StatusColors = {
   bg: {
     error: 'bgRed',
     info: 'bgBlue',
@@ -50,11 +45,11 @@ const colorFromStatusId: ColorFromStatusIdType = {
 export const getLoggingArgs = (config: ConfigType, logData: LogDataType) => {
   const args: string[] = [`\n`];
   const { includeTimestamp, includeStatus } = config;
-  const { statusId } = logData;
+  const { statusType } = logData;
 
-  const statusMsg: string = statusFromStatusId[statusId as keyof StatusFromStatusIdType];
-  const fgColor: string = colorFromStatusId.fg[statusId as keyof ColorType];
-  const bgColor: string = colorFromStatusId.bg[statusId as keyof ColorType];
+  const statusMsg: string = statusText[statusType as keyof StatusText];
+  const fgColor: string = statusColors.fg[statusType as keyof ColorType];
+  const bgColor: string = statusColors.bg[statusType as keyof ColorType];
 
   if (includeTimestamp) args.push(...[styleWrapper['fgGray'], logData.timestamp, resetWrapper]);
 
