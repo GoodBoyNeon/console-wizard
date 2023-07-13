@@ -222,20 +222,9 @@ export const generateTable = (
   const values = data.map(dataObj => Object.values(dataObj));
   const topRowElements = filterDuplicates(keys);
 
-  console.log(keys);
-  console.log(values);
-
   table += generateTopRow(data, topRowElements, values, config);
   table += generateBody(data, topRowElements, values, config);
   table += generateEndBorder(data, topRowElements, values, config);
 
   return table;
 };
-
-// const table = generateTable([
-//   { name: 'Monte Falco', height: 1658, place: 'Parco Foreste Casentinesi' },
-//   { name: 'Monte Falterona', height: 1654, place: 'Parco Foreste Casentinesi' },
-//   { name: 'Poggio Scali', height: 1520, place: 'Parco Foreste Casentinesi' },
-//   { name: 'Pratomagno', height: 1592, place: 'Parco Foreste Casentinesi' },
-//   { name: 'Monte Amiata', height: 19812, place: 'Siena' },
-// ]);
