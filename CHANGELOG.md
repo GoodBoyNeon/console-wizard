@@ -1,5 +1,17 @@
 # console-wizard
 
+## [1.4.0](https://github.com/GoodBoyNeon/console-wizard/compare/v1.3.2...v1.4.0) (2023-07-13)
+
+
+### Features
+
+* **logger:** add tables ([8fbe21f](https://github.com/GoodBoyNeon/console-wizard/commit/8fbe21f32c2b907db8a018275260b5f6f11c5581))
+
+
+### Bug Fixes
+
+* **table:** remove debug log statements ([8b78606](https://github.com/GoodBoyNeon/console-wizard/commit/8b786061663bba09414ae5f929787c16f0aef2a7))
+
 ## [1.3.2](https://github.com/GoodBoyNeon/console-wizard/compare/v1.0.1...v1.3.2) (2023-06-22)
 
 
