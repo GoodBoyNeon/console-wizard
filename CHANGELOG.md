@@ -1,5 +1,12 @@
 # console-wizard
 
+## [1.4.1](https://github.com/GoodBoyNeon/console-wizard/compare/v1.4.0...v1.4.1) (2023-07-15)
+
+
+### Bug Fixes
+
+* **types:** export TableData ([e1f90fe](https://github.com/GoodBoyNeon/console-wizard/commit/e1f90fe19b9cadf548188e7334a494791ac096be))
+
 ## [1.4.0](https://github.com/GoodBoyNeon/console-wizard/compare/v1.3.2...v1.4.0) (2023-07-13)
 
 
