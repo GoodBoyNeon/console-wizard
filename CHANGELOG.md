@@ -1,5 +1,12 @@
 # console-wizard
 
+## [1.4.2](https://github.com/GoodBoyNeon/console-wizard/compare/v1.4.1...v1.4.2) (2023-07-15)
+
+
+### Bug Fixes
+
+* **release:** build files ([c4d8ecb](https://github.com/GoodBoyNeon/console-wizard/commit/c4d8ecbbffdbd40e1515f1a45ae79d3f7f82f863))
+
 ## [1.4.1](https://github.com/GoodBoyNeon/console-wizard/compare/v1.4.0...v1.4.1) (2023-07-15)
 
 
