@@ -15,7 +15,7 @@
     "build": "tsup src/index.ts --format cjs,esm --dts",
     "lint": "tsc && eslint --fix",
     "ci": "yarn lint && yarn build",
-    "publish": "yarn lint && npm publish"
+    "release": "yarn build && npm publish"
   },
   "files": [
     "lib/**/*"
