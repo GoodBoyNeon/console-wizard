@@ -43,7 +43,7 @@ export const statusColors: StatusColors = {
 };
 
 export const getLoggingArgs = (config: ConfigType, logData: LogDataType) => {
-  const args: string[] = [`\n`];
+  const args: string[] = [];
   const { includeTimestamp, includeStatus } = config;
   const { statusType } = logData;
 
@@ -64,6 +64,7 @@ export const getLoggingArgs = (config: ConfigType, logData: LogDataType) => {
     );
 
   args.push(...[styleWrapper[fgColor as keyof styleWrapperType], logData.message, resetWrapper]);
+  args.push('\n');
 
   return args;
 };

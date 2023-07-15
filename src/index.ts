@@ -10,3 +10,4 @@ export const logger = {
 
 export { WizardConfig, ConfigType, setWizardConfig } from './setWizardConfig';
 export { LogDataType } from './helpers/getLoggingArgs';
+export { TableData } from './typings/LoggerTypes';
