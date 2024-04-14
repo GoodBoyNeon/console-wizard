@@ -4,12 +4,12 @@
   "author": "Sushant Ray <contact@neon.is-a.dev>",
   "version": "1.4.2",
   "private": false,
-  "main": "./lib/index.js",
-  "module": "./lib/index.mjs",
-  "types": "./lib/index.d.ts",
   "exports": {
-    "import": "./lib/index.mjs",
-    "require": "./lib/index.js"
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.mjs",
+      "types": "./lib/index.d.ts"
+    }
   },
   "scripts": {
     "build": "tsup src/index.ts --format cjs,esm --dts",
