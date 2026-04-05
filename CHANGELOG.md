@@ -1,5 +1,12 @@
 # console-wizard
 
+## [1.4.4](https://github.com/GoodBoyNeon/console-wizard/compare/v1.4.3...v1.4.4) (2026-04-05)
+
+
+### Bug Fixes
+
+* **logger:** update timestamp to generate on each call ([ca38630](https://github.com/GoodBoyNeon/console-wizard/commit/ca3863060e84e2b0c9ce5c021578e9e602c6f26b))
+
 ## [1.4.3](https://github.com/GoodBoyNeon/console-wizard/compare/v1.4.2...v1.4.3) (2024-04-14)
 
 
