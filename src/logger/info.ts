@@ -3,9 +3,9 @@ import { getConfig } from '../helpers/getConfig';
 import { StatusType } from '../typings/LoggerTypes';
 import { ConfigType } from '../setWizardConfig';
 
-const timestamp = `[${getTimestamp()}]`;
 
 export const info = (message: string, userConfigOverride?: ConfigType): string => {
+  const timestamp = `[${getTimestamp()}]`;
   const statusType: StatusType = 'info';
 
   const config = getConfig(userConfigOverride);
