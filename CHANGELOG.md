@@ -1,5 +1,12 @@
 # console-wizard
 
+## [1.4.6](https://github.com/GoodBoyNeon/console-wizard/compare/v1.4.5...v1.4.6) (2026-04-22)
+
+
+### Bug Fixes
+
+* build pkg before release :facepalm: ([8b9f1b3](https://github.com/GoodBoyNeon/console-wizard/commit/8b9f1b3e32c8d021f12d5028d6a0888d473747f0))
+
 ## [1.4.5](https://github.com/GoodBoyNeon/console-wizard/compare/v1.4.4...v1.4.5) (2026-04-05)
 
 
